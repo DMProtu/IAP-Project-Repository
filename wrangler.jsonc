@@ -1,0 +1,29 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "iap-lorawan-dashboard",
+	"main": "worker/index.js",
+	"compatibility_date": "2026-03-20",
+	"assets": {
+		"directory": "./dist",
+		"binding": "ASSETS",
+		"not_found_handling": "single-page-application",
+		"run_worker_first": [
+			"/api/*"
+		]
+	},
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		"TTN_REGION": "au1",
+		"TTN_APP_ID": "chris-gateway-application",
+		"TTN_DEVICE_ID": "chris-tbeam"
+	},
+	"kv_namespaces": [
+		{
+			"binding": "DEVICE_DATA",
+			"id": "387062698b574215910f58037fe261a6",
+			//"remote": true
+		}
+	]
+}
