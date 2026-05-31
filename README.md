@@ -2,7 +2,7 @@
 
 This project uses React + Vite for the frontend and a Cloudflare Worker for the backend. The backend serves these routes on the same domain:
 
-- `/api/health`
+- `/api/history`
 - `/api/test-connection`
 - `/api/device-data`
 
@@ -71,7 +71,7 @@ Wrangler will give you a local address. Open it in your browser.
 
 Test these URLs locally:
 
-- `/api/health`
+- `/api/history`
 - `/api/test-connection`
 - `/api/device-data`
 
